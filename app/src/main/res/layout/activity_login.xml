@@ -27,6 +27,7 @@
                 android:layout_width="@dimen/dimen_60dp"
                 android:layout_height="@dimen/dimen_60dp"
                 android:layout_gravity="center"
+                android:background="#CEF6D0"
                 app:srcCompat="@drawable/online_shop" />
 
             <TextView
