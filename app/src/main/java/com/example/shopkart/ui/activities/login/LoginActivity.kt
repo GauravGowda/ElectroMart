@@ -29,9 +29,9 @@ class LoginActivity : BaseActivity() {
             startActivity(Intent(this@LoginActivity, RegistrationActivity::class.java))
         }
 
-        mBinding.tvForgotPassword.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, ForgotPasswordActivity::class.java))
-        }
+//        mBinding.tvForgotPassword.setOnClickListener {
+//            startActivity(Intent(this@LoginActivity, ForgotPasswordActivity::class.java))
+//        }
 
         observeLiveEvents()
     }
