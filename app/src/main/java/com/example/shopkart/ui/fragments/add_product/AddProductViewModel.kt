@@ -48,6 +48,15 @@ class AddProductViewModel @Inject constructor(
                 return false
             }
 
+            observableProductPrice.trimmed == "0" -> {
+                _status.postValue(Resource.Error("Please Enter Valid Product Price"))
+                return false
+            }
+            observableProductDescription.trimmed.isBlank() -> {
+                _status.postValue(Resource.Error("Please Enter Product Description"))
+                return false
+            }
+
             observableProductQuantity.trimmed.isBlank() -> {
                 _status.postValue(Resource.Error("Please Enter Product Description"))
                 return false
