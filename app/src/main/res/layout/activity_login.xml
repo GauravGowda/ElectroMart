@@ -70,7 +70,7 @@
                 android:imeOptions="actionNext"
                 android:inputType="textEmailAddress"
                 android:text="@={viewModel.observableEmail}"
-                tools:text="dhruv@gmail.com" />
+                tools:text="Gaurav@gmail.com" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
