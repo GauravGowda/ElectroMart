@@ -19,7 +19,8 @@
             android:layout_height="@dimen/dimen_120dp"
             android:background="@drawable/drawable_gradient_splash_background"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
 
         <LinearLayout
             android:id="@+id/layout_settings_profile_image"
