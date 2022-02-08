@@ -138,10 +138,12 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_registration"
             style="@style/ShopKartButtonStyle"
+            android:layout_width="290dp"
+            android:layout_height="52dp"
             android:layout_margin="@dimen/dimen_32dp"
             android:foreground="?android:attr/selectableItemBackground"
-            android:text="@string/text_logout"
             android:onClick="@{() -> viewModel.onLogoutButtonClick()}"
+            android:text="@string/text_logout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_settings_addresses" />
