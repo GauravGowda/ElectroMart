@@ -133,7 +133,7 @@
                         android:inputType="number"
                         android:maxLength="10"
                         android:text="@={viewModel.observableMobile}"
-                        tools:text="96870296301" />
+                        tools:text="XXXXXXXXXX" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
