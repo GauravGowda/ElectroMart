@@ -114,9 +114,11 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_login"
             style="@style/ShopKartButtonStyle"
+            android:layout_width="369dp"
+            android:layout_height="47dp"
             android:foreground="?android:attr/selectableItemBackground"
-            android:text="@string/text_login"
             android:onClick="@{() -> viewModel.loginRegisteredUser()}"
+            android:text="@string/text_login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_forgot_password" />
