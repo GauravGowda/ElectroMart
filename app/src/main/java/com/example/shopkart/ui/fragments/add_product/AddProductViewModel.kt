@@ -36,25 +36,18 @@ class AddProductViewModel @Inject constructor(
     private fun validateProductDetails(): Boolean {
         when {
             observableProductImageUri.trimmed.isBlank() -> {
-                _status.postValue(Resource.Error("Please Choose Your Product Image with correct file"))
+                _status.postValue(Resource.Error("Please Choose Your Product Image "))
                 return false
             }
             observableProductTitle.trimmed.isBlank() -> {
-                _status.postValue(Resource.Error("Please Enter Product Title with valid things"))
+                _status.postValue(Resource.Error("Please Enter Product Title "))
                 return false
             }
             observableProductPrice.trimmed.isBlank() -> {
-                _status.postValue(Resource.Error("Please Enter Product Price and valid!"))
+                _status.postValue(Resource.Error("Please Enter Product Price "))
                 return false
             }
-            observableProductPrice.trimmed == "0" -> {
-                _status.postValue(Resource.Error("Please Enter Valid Product Price"))
-                return false
-            }
-            observableProductDescription.trimmed.isBlank() -> {
-                _status.postValue(Resource.Error("Please Enter Product Description"))
-                return false
-            }
+
             observableProductQuantity.trimmed.isBlank() -> {
                 _status.postValue(Resource.Error("Please Enter Product Description"))
                 return false
