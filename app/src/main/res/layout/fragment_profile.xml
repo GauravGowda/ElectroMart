@@ -88,7 +88,7 @@
                         android:imeOptions="actionNext"
                         android:inputType="text"
                         android:text="@={viewModel.observableLastName}"
-                        tools:text="Limbachiya" />
+                        tools:text="Doe" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
