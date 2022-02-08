@@ -22,6 +22,7 @@
     <color name="colorBorder">#E8E6E6</color>
     <color name="color_dim_gray">#696969</color>
     <color name="maroon">#CC0000</color>
+    <color name="zaffire_blue">#001EB3</color>
     <color name="colorOrderStatusPending">@color/color_error</color>
     <color name="colorOrderStatusInProcess">#FF9800</color>
     <color name="colorOrderStatusDelivered">#8BC34A</color>
