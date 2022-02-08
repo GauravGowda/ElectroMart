@@ -64,26 +64,4 @@ class AddressDetailFragment : BaseFragment() {
     /**
      * Observe changes in the LiveData.
      */
-    private fun observeLiveEvents() {
-        mViewModel.status.observe(viewLifecycleOwner) { status ->
-            when (status) {
-                is Resource.Success -> {
-                    hideProgressbar()
-                    showSnackBar(mBinding.root, status.data ?: "Success", false)
-                    this.findNavController().popBackStack() // Back to the previous fragment.
-                }
-                is Resource.Error -> {
-                    hideProgressbar()
-                    showSnackBar(
-                        mBinding.root,
-                        status.message ?: "An unknown error occurred.",
-                        true
-                    )
-                }
-                is Resource.Loading -> {
-                    showProgressbar()
-                }
-            }
-        }
-    }
 }
