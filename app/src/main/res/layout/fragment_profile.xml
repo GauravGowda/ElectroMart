@@ -66,7 +66,7 @@
                         android:imeOptions="actionNext"
                         android:inputType="text"
                         android:text="@={viewModel.observableFirstName}"
-                        tools:text="Dhruv" />
+                        tools:text="John" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,7 +88,7 @@
                         android:imeOptions="actionNext"
                         android:inputType="text"
                         android:text="@={viewModel.observableLastName}"
-                        tools:text="Limbachiya" />
+                        tools:text="Doe" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -110,7 +110,7 @@
                         android:imeOptions="actionNext"
                         android:inputType="textEmailAddress"
                         android:text="@={viewModel.observableEmail}"
-                        tools:text="dhruv@gmail.com" />
+                        tools:text="john@gmail.com" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -133,7 +133,7 @@
                         android:inputType="number"
                         android:maxLength="10"
                         android:text="@={viewModel.observableMobile}"
-                        tools:text="96870296301" />
+                        tools:text="XXXXXXXXXX" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
