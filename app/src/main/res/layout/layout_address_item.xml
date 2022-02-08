@@ -35,7 +35,7 @@
                 app:layout_constraintEnd_toStartOf="@id/tv_address_type"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Dhruv Limbachiya" />
+                tools:text="John Doe" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_address_type"
@@ -65,7 +65,7 @@
                 android:includeFontPadding="false"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_address_full_name"
-                tools:text="Adinathnagar,Ahmedabad-382415 Ahmedabad Ahmedabad-382415" />
+                tools:text="Custom Address" />
 
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -80,7 +80,7 @@
                 android:includeFontPadding="false"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_address_zipcode"
-                tools:text="+91 9687029630" />
+                tools:text="+91 XXXXXXXXXXX" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
