@@ -20,7 +20,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="94dp">
 
             <LinearLayout
                 android:id="@+id/iv_order_image_layout"
@@ -33,14 +33,14 @@
                     android:id="@+id/iv_order_item_image"
                     android:layout_width="@dimen/dimen_100dp"
                     android:layout_height="@dimen/dimen_100dp"
+                    android:adjustViewBounds="true"
                     android:padding="12dp"
                     android:scaleType="centerCrop"
-                    android:adjustViewBounds="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     app:setImageUrl="@{order.image}"
                     app:setPlaceholder="@{@drawable/ic_cart}"
-                    tools:src="@drawable/ic_cart"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    tools:src="@drawable/ic_cart" />
 
             </LinearLayout>
 
@@ -59,25 +59,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/quicksand_bold"
+                    android:text="@{order.title}"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/dimen_18sp"
-                    android:text="@{order.title}"
-                    tools:text="Shoes"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    tools:text="Shoes" />
 
                 <TextView
                     android:id="@+id/iv_product_item_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4dp"
                     android:fontFamily="@font/quicksand_medium"
+                    android:text="@{String.format(@string/product_price,order.total_amount)}"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/dimen_16sp"
-                    android:layout_marginTop="@dimen/dimen_4dp"
-                    android:text="@{String.format(@string/product_price,order.total_amount)}"
-                    tools:text="20"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/iv_cart_item_title"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    tools:text="20" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
