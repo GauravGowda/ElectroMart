@@ -50,14 +50,14 @@ class AddProductFragment : BaseFragment() {
             when (status) {
                 is Resource.Success -> {
                     hideProgressbar()
-                    showToast(requireContext(),status.data ?: "Success")
+                    showToast(requireContext(),status.data ?: "")
                     this.findNavController().popBackStack() // Back to the previous fragment.
                 }
                 is Resource.Error -> {
                     hideProgressbar()
                     showSnackBar(
                         mBinding.root,
-                        status.message ?: "An unknown error occurred.",
+                        status.message ?: "",
                         true
                     )
                 }
