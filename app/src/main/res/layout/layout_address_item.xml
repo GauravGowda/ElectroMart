@@ -37,35 +37,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Dhruv Limbachiya" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_address_type"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/drawable_gradient_splash_background"
-                android:fontFamily="@font/quicksand_medium"
-                android:includeFontPadding="false"
-                android:paddingHorizontal="@dimen/dimen_10dp"
-                android:paddingVertical="@dimen/dimen_2dp"
-                android:text="@{address.type}"
-                android:textColor="@color/white"
-                android:textSize="@dimen/dimen_18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="Home" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_address_zipcode"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/dimen_8dp"
-                android:fontFamily="@font/quicksand_medium"
-                android:text="@{String.format(@string/text_full_address,address.address,address.zipCode)}"
-                android:textSize="@dimen/dimen_16sp"
-                android:layout_marginTop="@dimen/dimen_2dp"
-                android:includeFontPadding="false"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_address_full_name"
-                tools:text="Adinathnagar,Ahmedabad-382415 Ahmedabad Ahmedabad-382415" />
 
 
             <androidx.appcompat.widget.AppCompatTextView
